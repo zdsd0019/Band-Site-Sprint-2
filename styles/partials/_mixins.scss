@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'fonts';
+@import 'colors';
 
 @mixin mobile-m {
     @media screen and  (min-width: $mobile-m-breakpoint) {
