@@ -1,0 +1,77 @@
+
+@import 'colors';
+
+
+// Desk & Tablet Styles
+
+// H1 - Hero Header
+.hero-heading {
+    font-size: 60px;
+    line-height: 68px;
+}
+
+// H1 - Header
+.h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+// H2 - Header 
+.h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+// H3 - Subheader
+.h3 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+// H4 - Paragraph & comments
+.h4 {
+    font-size: 14px;
+    line-height: 22px;
+
+// H4 - Lists & Contact information
+    &-lists {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+// Labels
+.h5 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+// Mobile text styles
+
+.mobile {
+    // H1 - Header
+    &-h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    // H2 - Sub-Header 
+    &-h2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    // H4 - Paragraph & comments also Lists & Contact information
+    &-h4 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    // Labels
+    &-h5 {
+        font-size: 12px;
+        line-height: 20px;
+        color: $mercury;
+    }
+}
+
