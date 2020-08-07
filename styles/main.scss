@@ -218,9 +218,8 @@
     @include mobile-offset;
     color: $white;
     background-color: $black;
-    height: 41.625rem;
+    height: 38rem;
     padding-top: 1.25rem;
-    padding-bottom: 2.7rem;
 
     &__heading {
         @include mobile-header1;
