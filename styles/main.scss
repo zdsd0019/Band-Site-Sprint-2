@@ -1,4 +1,4 @@
-@import '../partials/mixins';
+@import '../styles/partials/mixins';
 
 .main__body {
     margin: 0;
@@ -7,25 +7,13 @@
     &__header {
         width: 100%;
         height: 5rem;
-        background-color: #323232;
+        background-color: $black;
         margin: 0;
         padding-bottom: 1.5rem;
 
         @include tablet {
             display: flex;
         }
-    }
-}
-
-.margin {
-    margin: 0;
-
-    &__bottom {
-        margin-bottom: 0;
-    }
-
-    &__top {
-        margin-top: 0;
     }
 }
 
@@ -52,6 +40,7 @@
 .nav__top {
     padding-top: 1rem;
     width: 100%;
+    display: flex;
 
     @include tablet {
         padding-left: 3.125rem;
@@ -61,11 +50,11 @@
         
 
 .link__decor {
+    @include mobile-header2-sub-header;
     text-decoration: none;
-    color: white;
-    display: inline-flex;
-    justify-content: space-evenly;
-    width: 47%;
+    color: $white;
+    text-align: center;
+    width: 50%;
     
     @include laptop-m {
         margin-right: 3.5rem;
@@ -91,7 +80,7 @@
 
 .hero__img {
     background-image: url("../assets/logo/hero-img.jpg");
-    background-color: #323232;
+    background-color: $black;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 50%;
@@ -114,9 +103,10 @@
         }
 
     &__text {
-        color: white;
-        font-weight: bold;
-        width: 15.313rem;
+        @include desk-and-tablet-hero-header1;
+        @include mobile-offset;
+        color: $white;
+        // width: 15.313rem;
         margin-left: 1rem;
         margin-top: 0;
         padding-top: 5%;
@@ -126,7 +116,7 @@
                 padding-left: 1.5rem;
                 padding-top: 17%;
                 font-size: 2.438rem;
-                width: 19.688rem;
+                // width: 19.688rem;
             }
             
             @include laptop {
@@ -287,7 +277,7 @@
     &__photo__gallery {
         padding-left: 1rem;
         padding-right: 1rem;
-        background-color: #FAFAFA;
+        background-color: $alabaster;
 
         @include tablet {
             padding-left: 1.5rem;
@@ -347,150 +337,72 @@
 }
 
 
+// Footer Styling
 .footer {
-    padding-left: 1rem;
-    color: white;
-    background-color: #323232;
+    @include mobile-offset;
+    color: $white;
+    background-color: $black;
     height: 41.625rem;
     padding-top: 1.25rem;
+    padding-bottom: 2.7rem;
 
-    @include tablet {
-        height: 23.125rem;
+    &__heading {
+        @include mobile-header1;
+        font-size: 2.11rem;
+        max-width: 72.92%;
     }
 
-    @include laptop {
-        height: 27.188rem;
-    }
-
-    @include laptop-m {
-        height: 33.75rem;
-    }
+    // &__header {
+        // display: inline-flex;
+        // justify-content: space-between;
+    // }
 
     &__social__icons {
-        width: 5.9375rem;
         display: flex;
         justify-content: space-between;
-
-        @include tablet {
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            padding-left: 1.875rem;
-            padding-right: 3.4375rem;
-            width: 8.125rem;
-        }
-
-        @include laptop {
-            margin: 0;
-            padding-right: 19.625rem;
-        }
-
-        @include laptop-m {
-
-            &__special {
-            padding-right: 2rem;
-        }
+        width: 45.838%;
     }
-}
 
-    &__logo__hero__img{
+    &__logo {
         display: none;
-            
-        @include tablet {
-            display: flex;
-            padding-top: 2.8125rem;
-            padding-left: 6.375rem;   
-        }
-
-        @include laptop-m {
-            height: 1.5rem;
-            width: 7.5rem;
-            padding-right: 7.75rem;
-            padding-left: 7.5rem;
-        }
-
-        
     }
-    
 
-    @include tablet {
-        &__header {
-            display: inline-flex;
-            justify-content: space-between;
-
-            @include laptop {
-                margin-left: 2.625rem;
-                margin-top: 3rem;
-            }
-
-            @include laptop-m {
-                padding-bottom: 3.5rem;
-                margin-left: 9.688rem;
-            }
-        }
-    
-        &__heading {
-            font-size: 2.25rem;
-
-            @include laptop-m {
-                font-size: 2rem;
-            }
-
-        }
-
-        &__paragraph {
-            display: flex;
-
-            @include laptop-m {
-                padding-left: 6.938rem;
-                padding-bottom: 2.5rem;
-            }
-
-            &__c1 {
-                margin-right: 0;
-                font-size: 1.1875rem;
-
-                @include laptop {
-                    margin-left: 2.625rem;
-                }
-
-                &__first__line {
-                    margin-top: 0;
-                } 
-            }
-
-            &__c2 {
-                font-size: 1.1875rem;
-                margin-right: 1.5rem;
-                margin-left: 1.5rem;
-                padding-right: 1.563rem;
-            }
-
-            &__c3 {
-                margin-right: 0;
-                font-size: 1.1875rem;
-            }
-        }
-
-        &__copy--right {
-            display: flex;
-            margin-top: -1.563rem;
-            font-size: 1.1875rem;
-
-            &__margin__top {
-                margin-top: 1.813rem;
-                padding-left: 0.75rem;
-            }
-            @include laptop-m {
-                margin-left: 9.563rem;
-            }
-        }
+    &__paragraph {
+        max-width: 72.92%;
     }
+
     &__mailto {
+        @include mobile-header4-paragraph;
         text-decoration: none;
-        color: white;
+        color: $white;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    &--name {
+        @include mobile-header4-paragraph;
+        margin: 0;
+        max-width: 63.89%;
+    }
+
+    &--address {
+        @include mobile-header4-paragraph;
+        margin: 0;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: normal;
+
+        &-container {
+            @include mobile-header5-labels;
+            margin-top: 1rem;
+            font-style: normal;
+        }
+    }
+
+    &--copy-right {
+        @include mobile-header5-labels;
+        margin: 0;
+        font-size: 0.673rem;
+        width: 58%;
     }
 }
-
-
-
-   
