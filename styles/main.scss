@@ -198,6 +198,20 @@
     }
 }
 
+.picture {
+
+    &__container {
+        @include mobile-offset;
+        background-color: $alabaster;
+    }
+
+    &__gallery {
+        max-width: 100%;
+        padding-bottom: 1rem;
+    }
+
+}
+
 
 // Footer Styling
 .footer {
@@ -213,11 +227,6 @@
         font-size: 2.11rem;
         max-width: 72.92%;
     }
-
-    // &__header {
-        // display: inline-flex;
-        // justify-content: space-between;
-    // }
 
     &__social__icons {
         display: flex;
