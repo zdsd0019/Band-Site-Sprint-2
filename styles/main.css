@@ -78,12 +78,12 @@
   src: url(../../assets/_global-font/AvenirNextProLT/Linotype-AvenirNextLTPro-UltLtIt.otf);
 }
 
-.main__body {
+.universal {
   margin: 0;
   font-family: Avenir, Roboto;
 }
 
-.main__body__header {
+.header {
   width: 100%;
   height: 5rem;
   background-color: #323232;
@@ -92,7 +92,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .main__body__header {
+  .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -250,7 +250,245 @@
   }
 }
 
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.container__musicians__img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  .container__musicians__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .container__musicians__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__musicians__img {
+    height: 22.625rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__musicians__img {
+    height: 25rem;
+    width: 90%;
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__musicians__img {
+    height: 28.125rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+.container__quote {
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 98%;
+}
+
+@media screen and (min-width: 768px) {
+  .container__quote {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__quote {
+    padding-left: 2.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 78%;
+  }
+}
+
+.container__quote__author {
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__quote__author {
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__quote__author {
+    padding-left: 2.75rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__quote__author--story {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  .container__quote__author--story--m {
+    margin-right: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .container__quote__author--story--m {
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__quote__author--story {
+    width: 55rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.container__quote__author--multi {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container__quote__author--multi {
+    font-size: 1.563rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__quote__author--multi {
+    padding-left: 2.5rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__quote__author--multi {
+    margin-bottom: 2rem;
+  }
+}
+
+.container__photo__gallery {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .container__photo__gallery {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__photo__gallery {
+    padding-top: 3.125rem;
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__photo__gallery {
+    padding-left: 11.25rem;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.container__photo__gallery__img {
+  width: 100%;
+  margin-bottom: 1rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media screen and (min-width: 375px) {
+  .container__photo__gallery__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .container__photo__gallery__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__photo__gallery__img {
+    height: 7.875rem;
+    width: 31%;
+    margin-bottom: 1.5rem;
+    margin-right: 0.813rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__photo__gallery__img {
+    height: 10.938rem;
+    width: 30%;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__photo__gallery__img {
+    height: 12.0625rem;
+    width: 30%;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.container__photo__gallery__img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .paragraph__title {
+  font-family: Avenir-Bold;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-size: 1.343rem;
+  width: 75%;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   margin-bottom: 0;
@@ -272,240 +510,6 @@
   .paragraph__title__photo__gallery {
     padding-bottom: 4rem;
   }
-}
-
-.section {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section {
-    margin-left: 11.25rem;
-    margin-right: 11.25rem;
-    padding-bottom: 3rem;
-  }
-}
-
-.section__musicians__img {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 375px) {
-  .section__musicians__img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .section__musicians__img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section__musicians__img {
-    height: 22.625rem;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__musicians__img {
-    height: 25rem;
-    width: 90%;
-    padding-left: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__musicians__img {
-    height: 28.125rem;
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-}
-
-.section__quote {
-  margin-bottom: 2rem;
-  margin-top: 0;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 98%;
-}
-
-@media screen and (min-width: 768px) {
-  .section__quote {
-    font-weight: bold;
-    font-size: 1.5rem;
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__quote {
-    padding-left: 2.5rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    width: 78%;
-  }
-}
-
-.section__quote__author {
-  margin-bottom: 2.5rem;
-  margin-top: 0;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1024px) {
-  .section__quote__author {
-    padding-left: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__quote__author {
-    padding-left: 2.75rem;
-    margin-bottom: 3.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section__quote__author--story {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0;
-  }
-  .section__quote__author--story--m {
-    margin-right: 1.5rem;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .section__quote__author--story--m {
-    margin-right: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__quote__author--story {
-    width: 55rem;
-    padding-left: 2.5rem;
-  }
-}
-
-.section__quote__author--multi {
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .section__quote__author--multi {
-    font-size: 1.563rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__quote__author--multi {
-    padding-left: 2.5rem;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__quote__author--multi {
-    margin-bottom: 2rem;
-  }
-}
-
-.section__photo__gallery {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #fafafa;
-}
-
-@media screen and (min-width: 768px) {
-  .section__photo__gallery {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__photo__gallery {
-    padding-top: 3.125rem;
-    padding-left: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__photo__gallery {
-    padding-left: 11.25rem;
-    padding-top: 4rem;
-    padding-bottom: 2.5rem;
-  }
-}
-
-.section__photo__gallery__img {
-  width: 100%;
-  margin-bottom: 1rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-@media screen and (min-width: 375px) {
-  .section__photo__gallery__img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .section__photo__gallery__img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section__photo__gallery__img {
-    height: 7.875rem;
-    width: 31%;
-    margin-bottom: 1.5rem;
-    margin-right: 0.813rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__photo__gallery__img {
-    height: 10.938rem;
-    width: 30%;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__photo__gallery__img {
-    height: 12.0625rem;
-    width: 30%;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.section__photo__gallery__img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 .footer {
