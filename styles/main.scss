@@ -5,6 +5,8 @@
     font-family: Avenir, Roboto;
 }
 
+// Nav Styling
+
 .header {
     width: 100%;
     height: 5rem;
@@ -78,6 +80,8 @@
     }
   }
 
+//   Body Styling
+
 .hero__img {
     background-image: url("../assets/logo/hero-img.jpeg");
     background-color: $black;
@@ -134,208 +138,66 @@
     @include mobile-offset;
 
     @include tablet {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        @include tablet-offset;
         margin-bottom: 0;
     }
 
     @include laptop {
-        margin-left: 11.25rem;
-        margin-right: 11.25rem;
+        @include laptop-offset;
         padding-bottom: 3rem;
 
     }
-
-    &__musicians__img {
-        width: 100%;
-        margin-bottom: 1.5rem;
-
-        @include mobile-m {
-            width: 100%;
-        }    
-
-        @include mobile-l {
-            width: 100%;
-        }
-
-        @include tablet {
-            height: 22.625rem;
-            width: 100%;
-        }
-
-        @include laptop {
-            height: 25rem;
-            width: 90%;
-            padding-left: 2.5rem;
-        }
-
-        @include laptop-m {
-            height: 28.125rem;
-            width: 100%;
-            margin-bottom: 3rem;
-        }
-    }
     
-    &__quote {
-        margin-bottom: 2rem;
+}
+
+
+.paragraph {
+
+    &__title {
+        @include mobile-header2-sub-header;
+        font-size: 1.343rem;
+        width: 75%;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 0;
         margin-top: 0;
-        font-weight: bold;
-        font-size: 1rem;
-        width: 98%;
-
-        @include tablet {
-            font-weight: bold;
-            font-size: 1.5rem;
-            width: 90%;
-        }
-
-        @include laptop {
-            padding-left: 2.5rem;
-            font-weight: bold;
-            font-size: 1.5rem;
-            width: 78%;
-        }
     }
+   
 
-    &__quote__author {
-        margin-bottom: 2.5rem;
-        margin-top: 0;
-        font-weight: bold;
-
-        @include laptop {
-            padding-left: 2.5rem;
-        }
-
-        @include laptop-m {
-            padding-left: 2.75rem;
-            margin-bottom: 3.5rem;
-        }
-    }
-
-    &__quote__author--story {
-        @include tablet {
-            display: flex;
-            margin-top: 0;
-
-            &--m {
-                margin-right: 1.5rem;
-                margin-top: 0;
-
-                @include laptop-m {
-                    margin-right: 2.5rem;
-                }
-            }
-        }
-
-        @include laptop {
-            width: 55rem;
-            padding-left: 2.5rem;
-        }
-    }
-
-    &__quote__author--multi {
-        margin-bottom: 1.5rem;
-
-        @include tablet {
-            font-size: 1.563rem;
-        }
-
-        @include laptop {
-            padding-left: 2.5rem;
-            margin-top: 0;
-        }
-
-        @include laptop-m {
-            margin-bottom: 2rem;
-        }    
-    }
-    &__photo__gallery {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        background-color: $alabaster;
-
-        @include tablet {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-
-        @include laptop {
-            padding-top: 3.125rem;
-            padding-left: 2.5rem;
-        }
-
-        @include laptop-m {
-            padding-left: 11.25rem;
-            padding-top: 4rem;
-            padding-bottom: 2.5rem;    
-        }
-    }
-
-    &__photo__gallery__img {
+    &__img {
         width: 100%;
-        margin-bottom: 1rem;
-        filter: grayscale(100%);
-        
-        @include mobile-m {
-            width: 100%; 
-        }
+        padding-bottom: 1.5rem;
+    }
 
-        @include mobile-l {
-            width: 100%;
-        }
+    &__quote {
+        @include mobile-header2-sub-header;
+        font-size: 0.97rem;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 98%;
+    }
 
-        @include tablet {
-            height: 7.875rem;
-            width: 31%;
-            margin-bottom: 1.5rem;
-            margin-right: 0.813rem;
-        }
+    &__author {
+        @include mobile-header2-sub-header;
+        width: 44%;
+        margin: 0;
+        padding-bottom: 2.5rem;
+    }
 
-        @include laptop {
-            height: 10.938rem;
-            width: 30%;
-            margin-bottom: 1.5rem;
-            margin-right: 1.5rem;
-        }
+    &__heading {
+        @include mobile-header2-sub-header;
+        width: 83.334%;
+        margin: 0;
+        padding-bottom: 1.5rem;
+    }
 
-        @include laptop-m {
-            height: 12.0625rem;
-            width: 30%;
-            margin-right: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        &:hover {
-            filter: grayscale(0);
-        }
+    &__container {
+        @include mobile-header5-labels;
+        width: 98%;
+        margin-bottom: 2.5rem;
     }
 }
 
-
-.paragraph__title {
-    @include mobile-header2-sub-header;
-    font-size: 1.343rem;
-    width: 75%;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-    margin-bottom: 0;
-    margin-top: 0;
-
-        @include laptop {
-            padding-top: 0;
-            padding-bottom: 3rem;
-    }
-
-        @include laptop-m {
-            padding-top: 0;
-            padding-bottom: 3rem;
-
-        &__photo__gallery {
-            padding-bottom: 4rem;
-        }
-
-    }
-}
 
 // Footer Styling
 .footer {
