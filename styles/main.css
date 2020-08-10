@@ -298,7 +298,7 @@
     font-family: Avenir-Bold;
     font-size: 2.25rem;
     line-height: 2.75rem;
-    width: 48.334%;
+    width: 32.066%;
     font-size: 2.164rem;
   }
 }
@@ -405,9 +405,24 @@
   background-color: #fafafa;
 }
 
+@media screen and (min-width: 768px) {
+  .picture__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .picture__gallery {
   max-width: 100%;
   padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .picture__gallery {
+    max-width: 30.435%;
+    padding-bottom: 1.5rem;
+    padding-right: 1.12rem;
+  }
 }
 
 .footer {

@@ -168,7 +168,7 @@
 
         @include tablet {
             @include desk-and-tablet-header1;
-            width: 48.334%;
+            width: 32.066%;
             font-size: 2.164rem;
         }
     }
@@ -252,11 +252,21 @@
     &__container {
         @include mobile-offset;
         background-color: $alabaster;
+
+        @include tablet {
+            @include tablet-offset;
+        }
     }
 
     &__gallery {
         max-width: 100%;
         padding-bottom: 1rem;
+
+        @include tablet {
+            max-width: 30.435%;
+            padding-bottom: 1.5rem;
+            padding-right: 1.12rem;
+        }
     }
 
 }
