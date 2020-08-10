@@ -372,6 +372,33 @@
   margin-bottom: 2.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .paragraph__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph--left {
+    font-family: Avenir-Regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width: 431.7%;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph--right {
+    font-family: Avenir-Regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width: 431.7%;
+  }
+}
+
 .picture__container {
   padding-left: 16px;
   padding-right: 16px;
