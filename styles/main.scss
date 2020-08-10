@@ -286,6 +286,7 @@
 
     @include tablet {
         @include tablet-offset;
+        height: 17rem;
     }
 
     &__header {
@@ -305,6 +306,14 @@
         @include tablet {
             max-width: 97%;
         }
+
+        &--container {
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                width: 55%;
+            }
+        }
     }
 
     &__social__icons {
@@ -313,7 +322,7 @@
         width: 45.838%;
 
         @include tablet {
-            width: 15%;
+            width: 30%;
         }
     }
 
@@ -322,6 +331,13 @@
 
         @include tablet {
             display: unset;
+        }
+    }
+
+    &__tablet--container {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -341,6 +357,10 @@
         @include mobile-header4-paragraph;
         margin: 0;
         max-width: 63.89%;
+
+        @include tablet {
+            max-width: 100%;
+        }
     }
 
     &--address {
@@ -362,5 +382,13 @@
         margin: 0;
         font-size: 0.673rem;
         width: 58%;
+
+        @include tablet {
+            width: 24%;
+        }
+
+        &-container {
+            display: flex;
+        }
     }
 }
