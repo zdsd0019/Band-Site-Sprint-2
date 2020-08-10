@@ -72,7 +72,7 @@
     padding-bottom: 1.25rem;
 
     @include tablet {
-        padding-bottom: 2.313rem;
+        padding-bottom: 3.7rem;
     }
 
     @include laptop-m {
@@ -94,18 +94,18 @@
 
         @include tablet {
             height: 25rem;
-            background-size: 100% 25rem;
+            background-size: 100% 100%;
     }
 
         @include laptop {
             height: 37.625rem;
-            background-size: 100% 37.625rem;
+            background-size: 100% 100%;
             margin-bottom: 3rem;
     }
 
         @include laptop-m {
             height: 41.875rem;
-            background-size: 100% 41.875rem;
+            background-size: 100% 100%;
             margin-bottom: 3rem;
         }
 
