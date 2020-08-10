@@ -263,10 +263,14 @@
         padding-bottom: 1rem;
 
         @include tablet {
-            max-width: 30.435%;
+            max-width: 30.7%;
             padding-bottom: 1.5rem;
-            padding-right: 1.12rem;
+            padding-right: 1.5rem;
         }
+    }
+
+    &__right {
+        padding-right: 0;
     }
 
 }
@@ -280,20 +284,45 @@
     height: 38rem;
     padding-top: 1.25rem;
 
+    @include tablet {
+        @include tablet-offset;
+    }
+
+    &__header {
+        @include tablet{
+            display: inline-flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
     &__heading {
         @include mobile-header1;
         font-size: 2.11rem;
         max-width: 72.92%;
+
+        @include tablet {
+            max-width: 97%;
+        }
     }
 
     &__social__icons {
         display: flex;
         justify-content: space-between;
         width: 45.838%;
+
+        @include tablet {
+            width: 15%;
+        }
     }
 
     &__logo {
         display: none;
+
+        @include tablet {
+            display: unset;
+        }
     }
 
     &__paragraph {
