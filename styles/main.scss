@@ -114,13 +114,17 @@
         @include mobile-offset;
         color: $white;
         width: 63%;
-        margin-left: 1rem;
+        margin: 0;
 
             @include tablet {
-                padding-left: 1.5rem;
+                @include tablet-offset;
+                @include desk-and-tablet-hero-header1;
+                font-size: 3.5rem;
                 padding-top: 17%;
-                font-size: 2.438rem;
-                // width: 19.688rem;
+                display: flex;
+                align-self: end;
+                width: 64.585%;
+
             }
             
             @include laptop {
@@ -161,6 +165,12 @@
         padding-bottom: 1.5rem;
         margin-bottom: 0;
         margin-top: 0;
+
+        @include tablet {
+            @include desk-and-tablet-header1;
+            width: 48.334%;
+            font-size: 2.164rem;
+        }
     }
    
 
@@ -175,6 +185,14 @@
         padding-bottom: 2rem;
         margin: 0;
         width: 98%;
+
+        @include tablet {
+            @include desk-and-tablet-header1;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            width: 92%;
+
+        }
     }
 
     &__author {
@@ -182,6 +200,10 @@
         width: 44%;
         margin: 0;
         padding-bottom: 2.5rem;
+        
+        @include tablet {
+            width: 17.5%;
+        }
     }
 
     &__heading {
@@ -189,6 +211,13 @@
         width: 83.334%;
         margin: 0;
         padding-bottom: 1.5rem;
+
+        @include tablet {
+            @include desk-and-tablet-header3-sub-header;
+            font-family: Avenir-bold;
+            font-size: 1.333rem;
+            width: 49%;
+        }
     }
 
     &__container {

@@ -226,14 +226,24 @@
   padding-right: 16px;
   color: #ffffff;
   width: 63%;
-  margin-left: 1rem;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
   .hero__img__text {
-    padding-left: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Avenir-Bold;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-size: 3.5rem;
     padding-top: 17%;
-    font-size: 2.438rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: end;
+    width: 64.585%;
   }
 }
 
@@ -283,6 +293,16 @@
   margin-top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .paragraph__title {
+    font-family: Avenir-Bold;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    width: 48.334%;
+    font-size: 2.164rem;
+  }
+}
+
 .paragraph__img {
   width: 100%;
   padding-bottom: 1.5rem;
@@ -298,6 +318,17 @@
   width: 98%;
 }
 
+@media screen and (min-width: 768px) {
+  .paragraph__quote {
+    font-family: Avenir-Bold;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 92%;
+  }
+}
+
 .paragraph__author {
   font-family: Avenir-Bold;
   font-size: 0.875rem;
@@ -307,6 +338,12 @@
   padding-bottom: 2.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .paragraph__author {
+    width: 17.5%;
+  }
+}
+
 .paragraph__heading {
   font-family: Avenir-Bold;
   font-size: 0.875rem;
@@ -314,6 +351,17 @@
   width: 83.334%;
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph__heading {
+    font-family: Avenir-Regular;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Avenir-bold;
+    font-size: 1.333rem;
+    width: 49%;
+  }
 }
 
 .paragraph__container {
