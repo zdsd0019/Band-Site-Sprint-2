@@ -343,6 +343,7 @@
     &__gallery {
         max-width: 100%;
         padding-bottom: 1rem;
+        filter: grayscale(100%);
 
         @include tablet {
             max-width: 30.7%;
@@ -356,6 +357,10 @@
 
         @include laptop-l {
             padding-right: 2.39rem;
+        }
+
+        &:hover {
+            filter: grayscale(0);
         }
     }
 

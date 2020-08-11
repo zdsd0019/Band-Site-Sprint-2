@@ -532,6 +532,8 @@
 .picture__gallery {
   max-width: 100%;
   padding-bottom: 1rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -552,6 +554,11 @@
   .picture__gallery {
     padding-right: 2.39rem;
   }
+}
+
+.picture__gallery:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .picture__right {
