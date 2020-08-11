@@ -151,9 +151,13 @@
     }
 
     @include laptop {
-        @include laptop-offset;
+        padding-left: 5.625rem;
+        padding-right: 5.625rem;
         padding-bottom: 3rem;
+    }
 
+    @include laptop-l {
+        @include laptop-offset;
     }
     
 }
@@ -175,12 +179,32 @@
             width: 48.4%;
             font-size: 2.164rem;
         }
+
+        @include laptop {
+            width: 52.4%;
+        }
+
+        @include laptop-l {
+            width: 32.41%;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
     }
    
 
     &__img {
         width: 100%;
         padding-bottom: 1.5rem;
+
+        @include laptop {
+            width: 90%;
+            padding-left: 8.519%;
+            padding-bottom: 3rem;
+        }
+
+        @include laptop-l {
+            width: 82.964%;
+        }
     }
 
     &__quote {
@@ -195,7 +219,18 @@
             font-size: 1.5rem;
             line-height: 2rem;
             width: 92%;
+        }
 
+        @include laptop {
+            padding-left: 8.519%;
+            width: 87.678%;
+            font-size: 1.45rem;
+            text-align: justify;
+            padding-bottom: 2.5rem;
+        }
+
+        @include laptop-l {
+            width: 69%;
         }
     }
 
@@ -207,6 +242,11 @@
         
         @include tablet {
             width: 17.5%;
+        }
+
+        @include laptop {
+            padding-left: 8.519%;
+            padding-bottom: 3.5rem;
         }
     }
 
@@ -222,15 +262,27 @@
             font-size: 1.333rem;
             width: 49%;
         }
+
+        @include laptop {
+            padding-left: 8.519%;
+        }
     }
 
     &__container {
-        @include mobile-header5-labels;
         width: 98%;
         margin-bottom: 2.5rem;
 
         @include tablet {
             display: flex;
+        }
+
+        @include laptop {
+            padding-left: 8.519%;
+            width: 90%;
+        }
+
+        @include laptop-l {
+            width: 82.964%;
         }
     }
 
@@ -241,12 +293,28 @@
             padding-right: 1.5rem;
         }
 
+        @include laptop {
+            font-size: 0.777rem;
+            padding-right: 2.5rem;
+        }
+
+        @include laptop-l {
+            font-size: 0.9rem;
+        }
     }
 
     &--right {
-          @include tablet {
+        @include tablet {
             @include desk-and-tablet-header4-paragraph-and-comments;
             width: 431.7%;
+        }
+
+        @include laptop {
+            font-size: 0.777rem;
+        }
+
+        @include laptop-l {
+            font-size: 0.9rem;
         }
     }
 }
@@ -259,6 +327,15 @@
 
         @include tablet {
             @include tablet-offset;
+        }
+
+        @include laptop {
+            padding-left: 5.625rem;
+            padding-right: 5.625rem;
+        }
+
+        @include laptop-l {
+            @include laptop-offset;
         }
     }
 
