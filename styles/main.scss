@@ -8,7 +8,7 @@
 // Nav Styling
 
 .header {
-    width: 100%;
+    // width: 100%;
     height: 5rem;
     background-color: $black;
     margin: 0;
@@ -110,7 +110,7 @@
 
         @include laptop-m {
             height: 41.875rem;
-            width: 124.896%;
+            // width: 124.896%;
         }
 
     &__text {
@@ -133,11 +133,12 @@
             @include laptop {
                 padding-left: 5.625rem;
                 padding-right: 5.625rem;
+                width: 45.8%;
             }
 
             @include laptop-m {
                 @include laptop-offset;
-                width: 29.358%;
+                width: 32.6%;
             }
         }
 }
@@ -348,6 +349,14 @@
             padding-bottom: 1.5rem;
             padding-right: 1.5rem;
         }
+
+        @include laptop {
+            padding-right: 1.8rem;
+        }
+
+        @include laptop-l {
+            padding-right: 2.39rem;
+        }
     }
 
     &__right {
@@ -368,6 +377,15 @@
     @include tablet {
         @include tablet-offset;
         height: 17rem;
+    }
+
+    @include laptop {
+        padding-left: 5.625rem;
+        padding-right: 5.625rem;
+    }
+
+    @include laptop-l {
+        @include laptop-offset;
     }
 
     &__header {
@@ -394,6 +412,14 @@
                 justify-content: space-between;
                 width: 55%;
             }
+
+            @include laptop {
+                width: 45%;
+            }
+
+            @include laptop-l {
+                width: 35%;
+            }
         }
     }
 
@@ -419,6 +445,14 @@
         @include tablet {
             display: flex;
             justify-content: space-between;
+        }
+
+        @include laptop {
+            width: 80%;
+        }
+
+        @include laptop-l {
+            width: 62.5%;
         }
     }
 
@@ -466,6 +500,14 @@
 
         @include tablet {
             width: 24%;
+        }
+
+        @include laptop {
+            width: 20%;
+        }
+
+        @include laptop-l {
+            width: 16%;
         }
 
         &-container {

@@ -84,7 +84,6 @@
 }
 
 .header {
-  width: 100%;
   height: 5rem;
   background-color: #323232;
   margin: 0;
@@ -218,7 +217,6 @@
 @media screen and (min-width: 1200px) {
   .hero__img {
     height: 41.875rem;
-    width: 124.896%;
   }
 }
 
@@ -254,6 +252,7 @@
   .hero__img__text {
     padding-left: 5.625rem;
     padding-right: 5.625rem;
+    width: 45.8%;
   }
 }
 
@@ -261,7 +260,7 @@
   .hero__img__text {
     padding-left: 180px;
     padding-right: 180px;
-    width: 29.358%;
+    width: 32.6%;
   }
 }
 
@@ -543,6 +542,18 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .picture__gallery {
+    padding-right: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .picture__gallery {
+    padding-right: 2.39rem;
+  }
+}
+
 .picture__right {
   padding-right: 0;
 }
@@ -561,6 +572,20 @@
     padding-left: 24px;
     padding-right: 24px;
     height: 17rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
 
@@ -605,6 +630,18 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .footer__heading--container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__heading--container {
+    width: 35%;
+  }
+}
+
 .footer__social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,6 +676,18 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__tablet--container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__tablet--container {
+    width: 62.5%;
   }
 }
 
@@ -700,6 +749,18 @@
 @media screen and (min-width: 768px) {
   .footer--copy-right {
     width: 24%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer--copy-right {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer--copy-right {
+    width: 16%;
   }
 }
 
