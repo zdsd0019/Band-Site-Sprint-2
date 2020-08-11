@@ -17,6 +17,11 @@
     @include tablet {
         display: flex;
     }
+    
+    @include laptop-l {
+        @include laptop-offset;
+    }
+
 }
 
 .logo__hero__img {
@@ -60,6 +65,7 @@
     
     @include laptop-m {
         margin-right: 3.5rem;
+        width: 7.693%;
     }
 
     &:hover{
@@ -76,7 +82,7 @@
     }
 
     @include laptop-m {
-        width: 5rem;
+        width: 7.693%;
     }
   }
 
@@ -94,19 +100,17 @@
 
         @include tablet {
             height: 25rem;
-            background-size: 100% 100%;
+
     }
 
         @include laptop {
             height: 37.625rem;
-            background-size: 100% 100%;
-            margin-bottom: 3rem;
+
     }
 
         @include laptop-m {
             height: 41.875rem;
-            background-size: 100% 100%;
-            margin-bottom: 3rem;
+            width: 124.896%;
         }
 
     &__text {
@@ -120,20 +124,20 @@
                 @include tablet-offset;
                 @include desk-and-tablet-hero-header1;
                 font-size: 3.5rem;
-                padding-top: 17%;
                 display: flex;
-                align-self: end;
+                align-self: center;
                 width: 64.585%;
 
             }
             
             @include laptop {
-                padding-left: 10rem;
-                padding-top: 20%;
+                padding-left: 5.625rem;
+                padding-right: 5.625rem;
             }
 
             @include laptop-m {
-                padding-left: 11.25rem;
+                @include laptop-offset;
+                width: 29.358%;
             }
         }
 }
