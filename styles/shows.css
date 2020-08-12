@@ -234,6 +234,8 @@
 }
 
 .shows__container {
+  padding-left: 16px;
+  padding-right: 16px;
   color: #323232;
 }
 

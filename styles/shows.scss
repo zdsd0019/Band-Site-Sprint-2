@@ -111,6 +111,7 @@
 .shows{
     color: white;
     &__container {
+       @include mobile-offset;
        color: $black;
     }
 

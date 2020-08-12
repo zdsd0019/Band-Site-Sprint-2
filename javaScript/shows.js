@@ -1,53 +1,174 @@
 let showsList = document.querySelector('.shows__container');
 
-let mainHeading = [
-    'Shows'
-] 
+let mainHeading = [ 'Shows' ];
+
+// Following creates "Shows" heading
+const createMainHeading = (Mheading) => {
+	const MainHeadingEl = document.createElement('h2');
+
+	MainHeadingEl.innerText = Mheading;
+	MainHeadingEl.classList.add('main__heading');
+
+	return MainHeadingEl;
+};
+
+// Following creates table heading (Date, Venue, Location)
 
 let showsHeading = [
-    {
-        when: 'DATE',
-        task: 'VENUE', 
-        where: 'LOCATION',
-    }
-]
+	{
+		when: 'DATE',
+		task: 'VENUE',
+		where: 'LOCATION'
+	}
+];
 
-const createMainHeading = Mheading => {
-    const MainHeadingEl = document.createElement('h2');
-
-    MainHeadingEl.innerText = Mheading;
-    MainHeadingEl.classList.add('main__heading');
-
-    return MainHeadingEl;
-}
-
-mainHeading.forEach(shows => {
-    const MainHeadingEl = createMainHeading(shows);
-    showsList.appendChild(MainHeadingEl);
-})
-
-const createShowsElement = showsData => {
-    const showsHeadingEl = document.createElement('section');
-    const showsHeadingWhen = document.createElement('h5');
-    const showsHeadingTask = document.createElement('h5');
-    const showsHeadingWhere = document.createElement('h5');
-
-    showsHeadingWhen.innerText = showsData.when;
-    showsHeadingWhen.classList.add('shows__heading-one');
-    showsHeadingEl.appendChild(showsHeadingWhen);
-
-    showsHeadingTask.innerText = showsData.task;
-    showsHeadingTask.classList.add('shows__heading-two');
-    showsHeadingEl.appendChild(showsHeadingTask);
-
-    showsHeadingWhere.innerText = showsData.where;
-    showsHeadingWhere.classList.add('shows__heading-three');
-    showsHeadingEl.appendChild(showsHeadingWhere);
-
-    return showsHeadingEl;
-}
-
-showsHeading.forEach(shows => {
-    const showsHeadingEl = createShowsElement(shows);
-    showsList.appendChild(showsHeadingEl);
+mainHeading.forEach((shows) => {
+	const MainHeadingEl = createMainHeading(shows);
+	showsList.appendChild(MainHeadingEl);
 });
+
+const createShowsElement = (showsData) => {
+	const showsHeadingEl = document.createElement('section');
+	const showsHeadingWhen = document.createElement('h5');
+	const showsHeadingTask = document.createElement('h5');
+	const showsHeadingWhere = document.createElement('h5');
+
+    showsHeadingEl.classList.add('shows__heading');
+
+	showsHeadingWhen.innerText = showsData.when;
+	showsHeadingWhen.classList.add('shows__heading-one');
+	showsHeadingEl.appendChild(showsHeadingWhen);
+
+	showsHeadingTask.innerText = showsData.task;
+	showsHeadingTask.classList.add('shows__heading-two');
+	showsHeadingEl.appendChild(showsHeadingTask);
+
+	showsHeadingWhere.innerText = showsData.where;
+	showsHeadingWhere.classList.add('shows__heading-three');
+	showsHeadingEl.appendChild(showsHeadingWhere);
+
+	return showsHeadingEl;
+};
+
+showsHeading.forEach((shows) => {
+	const showsHeadingEl = createShowsElement(shows);
+	showsList.appendChild(showsHeadingEl);
+});
+
+// Following creates info of Date, Venue and Location
+
+let showsInfo = [
+    { when: 'DATE',
+      date: 'Mon Dec 17 2018',
+      task: 'VENUE', 
+      venue: 'Ronal Lane',
+      where: 'LOCATION',
+      location: 'San Francisco'
+   },
+  
+  { when: 'DATE',
+  date: 'Tue Jul 18 2019',
+  task: 'VENUE', 
+  venue: 'Pier 3 East',
+  where: 'LOCATION',
+  location: 'San Francisco'
+  },
+  
+  { when: 'DATE',
+  date: 'Fri Jul 22 2019',
+  task: 'VENUE', 
+  venue: 'View Loungue',
+  where: 'LOCATION',
+  location: 'San Francisco'
+  },
+  
+  { when: 'DATE',
+  date: 'Sat Aug 12 2019',
+  task: 'VENUE', 
+  venue: 'Hyatt Agency',
+  where: 'LOCATION',
+  location: 'San Francisco'
+  },
+  
+  { when: 'DATE',
+  date: 'Fri Sep 05 2019',
+  task: 'VENUE', 
+  venue: 'Moscow Center',
+  where: 'LOCATION',
+  location: 'San Francisco'
+  },
+  
+  { when: 'DATE',
+  date: 'Wed Aug 11 2019',
+  task: 'VENUE', 
+  venue: 'Pres Club',
+  where: 'LOCATION',
+  location: 'San Francisco'
+  },
+      
+  ];
+// [
+// 	{
+// 		date: 'Mon Dec 17 2018',
+// 		venue: 'Ronal Lane',
+// 		location: 'San Francisco'
+// 	},
+
+// 	{
+// 		date: 'Tue Jul 18 2019',
+// 		venue: 'Pier 3 East',
+// 		location: 'San Francisco'
+// 	},
+
+// 	{
+// 		date: 'Fri Jul 22 2019',
+// 		venue: 'View Loungue',
+// 		location: 'San Francisco'
+// 	},
+
+// 	{
+// 		date: 'Sat Aug 12 2019',
+// 		venue: 'Hyatt Agency',
+// 		location: 'San Francisco'
+// 	},
+
+// 	{
+// 		date: 'Fri Sep 05 2019',
+// 		venue: 'Moscow Center',
+// 		location: 'San Francisco'
+// 	},
+
+// 	{
+// 		date: 'Wed Aug 11 2019',
+// 		venue: 'Pres Club',
+// 		location: 'San Francisco'
+// 	}
+// ];
+
+const createShowsInfoElement = (infoShow) => {
+    const showsInfoEl = document.createElement('section');
+    const showsInfoDate = document.createElement('h3');
+    const showsInfoVenue = document.createElement('h4');
+    const showsInfoLocation = document.createElement('h4');
+    
+
+    showsInfoDate.innerText = infoShow.date;
+    showsInfoDate.classList.add('info__date');
+    showsInfoEl.appendChild(showsInfoDate);
+
+    showsInfoVenue.innerText = infoShow.venue;
+    showsInfoVenue.classList.add('info__venue');
+    showsInfoEl.appendChild(showsInfoVenue);
+
+    showsInfoLocation.innerText = infoShow.location;
+    showsInfoLocation.classList.add('info__location');
+    showsInfoEl.appendChild(showsInfoLocation);
+
+    return showsInfoEl;
+};
+
+    showsInfo.forEach((shows) => {
+    const showsInfoEl = createShowsInfoElement(shows);
+    showsList.appendChild(showsInfoEl);
+
+    }); 
