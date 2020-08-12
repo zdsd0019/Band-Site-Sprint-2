@@ -12,7 +12,9 @@
     // opacity: 50%;
 
         @include tablet {
-            height: 25rem;
+            @include tablet-offset;
+            height: 41.875rem;
+            align-items: unset;
 
         }
 
@@ -31,6 +33,12 @@
             margin: 0;
             padding-top: 4rem;
             padding-bottom: 1rem;
+
+            @include tablet {
+                @include desk-and-tablet-header2-sub-header;
+                @include tablet-offset;
+                padding-top: 6rem;
+            }
         }
 
         &__text {
@@ -45,10 +53,9 @@
                 @include tablet {
                     @include tablet-offset;
                     @include desk-and-tablet-hero-header1;
-                    font-size: 3.5rem;
-                    display: flex;
-                    align-self: center;
-                    width: 64.585%;
+                    font-size: 3.7rem;
+                    line-height: 5rem;
+                    width: 77.224%;
     
                 }
                 
@@ -61,6 +68,12 @@
                 @include laptop-m {
                     @include laptop-offset;
                     width: 32.6%;
+                }
+            }
+
+            &__audio {
+                @include tablet {
+                    width: 62%;
                 }
             }
             
