@@ -1,3 +1,65 @@
-.test {
-    background-color: red;
+@import './partials/mixins';
+
+.hero__image {
+    background-image: url("../assets/images/photo-gallery-1.jpg");
+    background-color: $black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 29.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // opacity: 50%;
+
+        @include tablet {
+            height: 25rem;
+
+        }
+
+        @include laptop {
+            height: 37.625rem;
+
+        }
+
+        @include laptop-m {
+            height: 41.875rem;
+            // width: 124.896%;
+        }
+
+        &__heading {
+            color: white;
+            width: 89%;
+        }
+
+        &__text {
+            @include mobile-header1;
+            @include mobile-offset;
+            color: $white;
+            margin: 0;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            padding-bottom: 2rem;
+    
+                @include tablet {
+                    @include tablet-offset;
+                    @include desk-and-tablet-hero-header1;
+                    font-size: 3.5rem;
+                    display: flex;
+                    align-self: center;
+                    width: 64.585%;
+    
+                }
+                
+                @include laptop {
+                    padding-left: 5.625rem;
+                    padding-right: 5.625rem;
+                    width: 45.8%;
+                }
+    
+                @include laptop-m {
+                    @include laptop-offset;
+                    width: 32.6%;
+                }
+            }
+            
 }
