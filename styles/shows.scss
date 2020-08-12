@@ -19,7 +19,9 @@
         }
 
         @include laptop {
-            height: 37.625rem;
+            padding-left: 5.625rem;
+            padding-right: 5.625rem;
+            height: 41.875rem;
 
         }
 
@@ -38,6 +40,16 @@
                 @include desk-and-tablet-header2-sub-header;
                 @include tablet-offset;
                 padding-top: 6rem;
+            }
+
+            @include laptop {
+                padding-left: 5.625rem;
+                padding-right: 5.625rem;
+                width: 35%;
+            }
+
+            @include laptop-l {
+                width: 29.509%
             }
         }
 
@@ -62,18 +74,26 @@
                 @include laptop {
                     padding-left: 5.625rem;
                     padding-right: 5.625rem;
-                    width: 45.8%;
+                    width: 65.218%;
                 }
     
                 @include laptop-m {
                     @include laptop-offset;
                     width: 32.6%;
                 }
+
+                @include laptop-l {
+                    width: 56.558%;
+                }
             }
 
             &__audio {
                 @include tablet {
                     width: 62%;
+                }
+                
+                @include laptop {
+                    padding-left: 5.5rem;
                 }
             }
             
