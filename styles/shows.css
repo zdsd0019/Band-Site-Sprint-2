@@ -239,6 +239,10 @@
   color: #323232;
 }
 
+.shows__heading {
+  display: none;
+}
+
 .shows__heading-wrap {
   color: white;
 }

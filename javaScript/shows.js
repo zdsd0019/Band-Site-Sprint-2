@@ -147,18 +147,34 @@ let showsInfo = [
 
 const createShowsInfoElement = (infoShow) => {
     const showsInfoEl = document.createElement('section');
+    const showsInfoWhen = document.createElement('h3');
     const showsInfoDate = document.createElement('h3');
+    const showsInfoTask = document.createElement('h3');
     const showsInfoVenue = document.createElement('h4');
+    const showsInfoWhere = document.createElement('h3')
     const showsInfoLocation = document.createElement('h4');
     
+    showsInfoWhen.innerText = infoShow.when;
+    showsInfoWhen.classList.add('shows__heading-style');
+    showsInfoEl.appendChild(showsInfoWhen);
 
     showsInfoDate.innerText = infoShow.date;
     showsInfoDate.classList.add('info__date');
     showsInfoEl.appendChild(showsInfoDate);
 
+
+    showsInfoTask.innerText = infoShow.task;
+    showsInfoTask.classList.add('info__task');
+    showsInfoEl.appendChild(showsInfoTask);
+
     showsInfoVenue.innerText = infoShow.venue;
     showsInfoVenue.classList.add('info__venue');
     showsInfoEl.appendChild(showsInfoVenue);
+
+
+    showsInfoWhere.innerText = infoShow.where;
+    showsInfoWhere.classList.add('info__where');
+    showsInfoEl.appendChild(showsInfoWhere);
 
     showsInfoLocation.innerText = infoShow.location;
     showsInfoLocation.classList.add('info__location');
