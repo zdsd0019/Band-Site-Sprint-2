@@ -1,6 +1,7 @@
 @import './partials/mixins';
 
 .hero__image {
+    @include mobile-offset;
     background-image: url("../assets/images/photo-gallery-1.jpg");
     background-color: $black;
     background-size: 100% 100%;
@@ -25,26 +26,26 @@
 
         }
 
-        @include laptop-m {
-            height: 41.875rem;
+        @include laptop-l {
+            @include laptop-offset;
         }
 
         &__heading {
             color: white;
-            width: 89%;
+            width: 100%;
             margin: 0;
             padding-top: 4rem;
             padding-bottom: 1rem;
 
             @include tablet {
                 @include desk-and-tablet-header2-sub-header;
-                @include tablet-offset;
+                // @include tablet-offset;
                 padding-top: 6rem;
             }
 
             @include laptop {
-                padding-left: 5.625rem;
-                padding-right: 5.625rem;
+                // padding-left: 5.625rem;
+                // padding-right: 5.625rem;
                 width: 35%;
             }
 
@@ -55,15 +56,16 @@
 
         &__text {
             @include mobile-header1;
-            @include mobile-offset;
+            // @include mobile-offset;
             color: $white;
             margin: 0;
             font-size: 2.2rem;
             line-height: 2.6rem;
             padding-bottom: 2rem;
+            max-width: 98%;
     
                 @include tablet {
-                    @include tablet-offset;
+                    // @include tablet-offset;
                     @include desk-and-tablet-hero-header1;
                     font-size: 3.7rem;
                     line-height: 5rem;
@@ -72,13 +74,13 @@
                 }
                 
                 @include laptop {
-                    padding-left: 5.625rem;
-                    padding-right: 5.625rem;
+                    // padding-left: 5.625rem;
+                    // padding-right: 5.625rem;
                     width: 65.218%;
                 }
     
                 @include laptop-m {
-                    @include laptop-offset;
+                    // @include laptop-offset;
                     width: 32.6%;
                 }
 
@@ -88,12 +90,14 @@
             }
 
             &__audio {
+                width: 100%;
+                
                 @include tablet {
                     width: 62%;
                 }
-                
+
                 @include laptop {
-                    padding-left: 5.5rem;
+                    // padding-left: 5.5rem;
                 }
             }
             

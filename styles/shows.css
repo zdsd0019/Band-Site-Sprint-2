@@ -79,6 +79,8 @@
 }
 
 .hero__image {
+  padding-left: 16px;
+  padding-right: 16px;
   background-image: url("../assets/images/photo-gallery-1.jpg");
   background-color: #323232;
   background-size: 100% 100%;
@@ -115,15 +117,16 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .hero__image {
-    height: 41.875rem;
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
 
 .hero__image__heading {
   color: white;
-  width: 89%;
+  width: 100%;
   margin: 0;
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -134,16 +137,12 @@
     font-family: Avenir-Demi;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding-left: 24px;
-    padding-right: 24px;
     padding-top: 6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero__image__heading {
-    padding-left: 5.625rem;
-    padding-right: 5.625rem;
     width: 35%;
   }
 }
@@ -158,19 +157,16 @@
   font-family: Avenir-Bold;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding-left: 16px;
-  padding-right: 16px;
   color: #ffffff;
   margin: 0;
   font-size: 2.2rem;
   line-height: 2.6rem;
   padding-bottom: 2rem;
+  max-width: 98%;
 }
 
 @media screen and (min-width: 768px) {
   .hero__image__text {
-    padding-left: 24px;
-    padding-right: 24px;
     font-family: Avenir-Bold;
     font-size: 3.75rem;
     line-height: 4.25rem;
@@ -182,16 +178,12 @@
 
 @media screen and (min-width: 1024px) {
   .hero__image__text {
-    padding-left: 5.625rem;
-    padding-right: 5.625rem;
     width: 65.218%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__image__text {
-    padding-left: 180px;
-    padding-right: 180px;
     width: 32.6%;
   }
 }
@@ -202,15 +194,13 @@
   }
 }
 
+.hero__image__audio {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .hero__image__audio {
     width: 62%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero__image__audio {
-    padding-left: 5.5rem;
   }
 }
 /*# sourceMappingURL=shows.css.map */
