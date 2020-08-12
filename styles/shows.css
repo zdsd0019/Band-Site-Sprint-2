@@ -203,4 +203,29 @@
     width: 62%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .hero__image__audio {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__image__audio {
+    height: 64.095%;
+    width: 40.371%;
+    padding-left: 5rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__image__laptop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 34%;
+  }
+}
 /*# sourceMappingURL=shows.css.map */

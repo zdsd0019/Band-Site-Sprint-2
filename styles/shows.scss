@@ -39,13 +39,10 @@
 
             @include tablet {
                 @include desk-and-tablet-header2-sub-header;
-                // @include tablet-offset;
                 padding-top: 6rem;
             }
 
             @include laptop {
-                // padding-left: 5.625rem;
-                // padding-right: 5.625rem;
                 width: 35%;
             }
 
@@ -56,7 +53,6 @@
 
         &__text {
             @include mobile-header1;
-            // @include mobile-offset;
             color: $white;
             margin: 0;
             font-size: 2.2rem;
@@ -65,7 +61,6 @@
             max-width: 98%;
     
                 @include tablet {
-                    // @include tablet-offset;
                     @include desk-and-tablet-hero-header1;
                     font-size: 3.7rem;
                     line-height: 5rem;
@@ -74,13 +69,10 @@
                 }
                 
                 @include laptop {
-                    // padding-left: 5.625rem;
-                    // padding-right: 5.625rem;
                     width: 65.218%;
                 }
     
                 @include laptop-m {
-                    // @include laptop-offset;
                     width: 32.6%;
                 }
 
@@ -97,8 +89,21 @@
                 }
 
                 @include laptop {
-                    // padding-left: 5.5rem;
+                    height: 30%;
+                }
+
+                @include laptop-l {
+                    height: 64.095%;
+                    width: 40.371%;
+                    padding-left: 5rem;
+                    align-self: flex-end;
                 }
             }
             
+            &__laptop {
+                @include laptop-l {
+                    display: flex;
+                    height: 34%;
+                }
+            }
 }
