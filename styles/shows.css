@@ -228,4 +228,16 @@
     height: 34%;
   }
 }
+
+.shows {
+  color: white;
+}
+
+.shows__container {
+  color: #323232;
+}
+
+.shows__heading-wrap {
+  color: white;
+}
 /*# sourceMappingURL=shows.css.map */

@@ -107,3 +107,17 @@
                 }
             }
 }
+
+.shows{
+    color: white;
+    &__container {
+       color: $black;
+    }
+
+    &__heading {
+        &-wrap {
+            color: white;
+        }
+    }
+}
+
