@@ -12,6 +12,11 @@ const createMainHeading = (Mheading) => {
 	return MainHeadingEl;
 };
 
+mainHeading.forEach((shows) => {
+	const MainHeadingEl = createMainHeading(shows);
+	showsList.appendChild(MainHeadingEl);
+});
+
 // Following creates table heading (Date, Venue, Location)
 
 let showsHeading = [
@@ -22,10 +27,6 @@ let showsHeading = [
 	}
 ];
 
-mainHeading.forEach((shows) => {
-	const MainHeadingEl = createMainHeading(shows);
-	showsList.appendChild(MainHeadingEl);
-});
 
 const createShowsElement = (showsData) => {
 	const showsHeadingEl = document.createElement('section');
