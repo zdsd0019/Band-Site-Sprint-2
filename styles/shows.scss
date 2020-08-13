@@ -114,6 +114,7 @@
        @include mobile-offset;
        color: $black;
        margin: 0;
+       padding-bottom: 2rem;
 
        @include tablet {
            @include tablet-offset;
@@ -148,6 +149,10 @@
             font-size: 1rem;
             width: 28%;
             color: $mercury-1;
+
+            @include laptop {
+                width: 25.7%;
+            }
         }
     }
 }
@@ -167,6 +172,7 @@
         margin: 0;
         color: $silver;
         padding-bottom: 1rem;
+        padding-top: 1.5rem;
 
         @include tablet {
             display: none;
@@ -245,7 +251,7 @@
 
 .button__buy {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     height: 2.5rem;
     border-radius: 4px;
     color: $white;

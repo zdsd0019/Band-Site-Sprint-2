@@ -238,6 +238,7 @@
   padding-right: 16px;
   color: #323232;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,6 +291,12 @@
   color: #e1e1e1;
 }
 
+@media screen and (min-width: 1024px) {
+  .shows__heading-three {
+    width: 25.7%;
+  }
+}
+
 .info {
   border-bottom: 0.2rem solid #e1e1e1;
 }
@@ -314,6 +321,7 @@
   margin: 0;
   color: #afafaf;
   padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -412,7 +420,7 @@
 
 .button__buy {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   height: 2.5rem;
   border-radius: 4px;
   color: #ffffff;
