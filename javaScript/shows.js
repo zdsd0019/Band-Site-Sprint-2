@@ -63,7 +63,8 @@ let showsInfo = [
       task: 'VENUE', 
       venue: 'Ronal Lane',
       where: 'LOCATION',
-      location: 'San Francisco'
+      location: 'San Francisco',
+      buy: 'BUY TICKETS'
    },
   
   { when: 'DATE',
@@ -71,7 +72,8 @@ let showsInfo = [
   task: 'VENUE', 
   venue: 'Pier 3 East',
   where: 'LOCATION',
-  location: 'San Francisco'
+  location: 'San Francisco',
+  buy: 'BUY TICKETS'
   },
   
   { when: 'DATE',
@@ -79,7 +81,8 @@ let showsInfo = [
   task: 'VENUE', 
   venue: 'View Loungue',
   where: 'LOCATION',
-  location: 'San Francisco'
+  location: 'San Francisco',
+  buy: 'BUY TICKETS'
   },
   
   { when: 'DATE',
@@ -87,7 +90,8 @@ let showsInfo = [
   task: 'VENUE', 
   venue: 'Hyatt Agency',
   where: 'LOCATION',
-  location: 'San Francisco'
+  location: 'San Francisco',
+  buy: 'BUY TICKETS'
   },
   
   { when: 'DATE',
@@ -95,7 +99,8 @@ let showsInfo = [
   task: 'VENUE', 
   venue: 'Moscow Center',
   where: 'LOCATION',
-  location: 'San Francisco'
+  location: 'San Francisco',
+  buy: 'BUY TICKETS'
   },
   
   { when: 'DATE',
@@ -103,47 +108,11 @@ let showsInfo = [
   task: 'VENUE', 
   venue: 'Pres Club',
   where: 'LOCATION',
-  location: 'San Francisco'
+  location: 'San Francisco',
+  buy: 'BUY TICKETS'
   },
       
   ];
-// [
-// 	{
-// 		date: 'Mon Dec 17 2018',
-// 		venue: 'Ronal Lane',
-// 		location: 'San Francisco'
-// 	},
-
-// 	{
-// 		date: 'Tue Jul 18 2019',
-// 		venue: 'Pier 3 East',
-// 		location: 'San Francisco'
-// 	},
-
-// 	{
-// 		date: 'Fri Jul 22 2019',
-// 		venue: 'View Loungue',
-// 		location: 'San Francisco'
-// 	},
-
-// 	{
-// 		date: 'Sat Aug 12 2019',
-// 		venue: 'Hyatt Agency',
-// 		location: 'San Francisco'
-// 	},
-
-// 	{
-// 		date: 'Fri Sep 05 2019',
-// 		venue: 'Moscow Center',
-// 		location: 'San Francisco'
-// 	},
-
-// 	{
-// 		date: 'Wed Aug 11 2019',
-// 		venue: 'Pres Club',
-// 		location: 'San Francisco'
-// 	}
-// ];
 
 const createShowsInfoElement = (infoShow) => {
     const showsInfoEl = document.createElement('section');
@@ -153,6 +122,7 @@ const createShowsInfoElement = (infoShow) => {
     const showsInfoVenue = document.createElement('h4');
     const showsInfoWhere = document.createElement('h3')
     const showsInfoLocation = document.createElement('h4');
+    const buyTickets = document.createElement('button');
     
     showsInfoWhen.innerText = infoShow.when;
     showsInfoWhen.classList.add('shows__heading-style');
@@ -180,6 +150,10 @@ const createShowsInfoElement = (infoShow) => {
     showsInfoLocation.classList.add('info__location');
     showsInfoEl.appendChild(showsInfoLocation);
 
+    buyTickets.innerText = 'BUY TICKETS';
+    buyTickets.classList.add('button__buy');
+    showsInfoEl.appendChild(buyTickets);
+
     return showsInfoEl;
 };
 
@@ -187,4 +161,4 @@ const createShowsInfoElement = (infoShow) => {
     const showsInfoEl = createShowsInfoElement(shows);
     showsList.appendChild(showsInfoEl);
 
-    }); 
+    });
