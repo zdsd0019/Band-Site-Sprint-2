@@ -3,7 +3,7 @@ let showsList = document.querySelector('.shows__container');
 let mainHeading = [ 'Shows' ];
 
 // Following creates "Shows" heading
-const createMainHeading = (mainHeading) => {
+const createMainHeading = mainHeading => {
 	const MainHeadingEl = document.createElement('h2');
 
 	MainHeadingEl.innerText = mainHeading;
@@ -12,7 +12,7 @@ const createMainHeading = (mainHeading) => {
 	return MainHeadingEl;
 };
 
-mainHeading.forEach((shows) => {
+mainHeading.forEach(shows => {
 	const MainHeadingEl = createMainHeading(shows);
 	showsList.appendChild(MainHeadingEl);
 });
@@ -28,7 +28,7 @@ let showsHeading = [
 ];
 
 
-const createShowsElement = (showsHeading) => {
+const createShowsElement = showsHeading => {
     
 	const showsHeadingEl = document.createElement('section');
 	const showsHeadingWhen = document.createElement('h5');
@@ -52,7 +52,7 @@ const createShowsElement = (showsHeading) => {
     return showsHeadingEl;
 };
 
-showsHeading.forEach((shows) => {
+showsHeading.forEach(shows => {
 	const showsHeadingEl = createShowsElement(shows);
 	showsList.appendChild(showsHeadingEl);
 });
@@ -116,7 +116,7 @@ let showsInfo = [
       
   ];
 
-const createShowsInfoElement = (showsInfo) => {
+const createShowsInfoElement = showsInfo => {
     const showsInfoEl = document.createElement('section');
     const showsInfoWhen = document.createElement('h3');
     const showsInfoDate = document.createElement('h3');
@@ -125,9 +125,11 @@ const createShowsInfoElement = (showsInfo) => {
     const showsInfoWhere = document.createElement('h3')
     const showsInfoLocation = document.createElement('h4');
     const buyTickets = document.createElement('button');
+
+    showsInfoEl.classList.add('info');
     
     showsInfoWhen.innerText = showsInfo.when;
-    showsInfoWhen.classList.add('shows__heading-style');
+    showsInfoWhen.classList.add('info__time');
     showsInfoEl.appendChild(showsInfoWhen);
 
     showsInfoDate.innerText = showsInfo.date;
@@ -150,6 +152,7 @@ const createShowsInfoElement = (showsInfo) => {
 
     showsInfoLocation.innerText = showsInfo.location;
     showsInfoLocation.classList.add('info__location');
+    showsInfoLocation.classList.add('info__location-last')
     showsInfoEl.appendChild(showsInfoLocation);
 
     buyTickets.innerText = 'BUY TICKETS';
@@ -159,7 +162,7 @@ const createShowsInfoElement = (showsInfo) => {
     return showsInfoEl;
 };
 
-    showsInfo.forEach((shows) => {
+    showsInfo.forEach(shows => {
     const showsInfoEl = createShowsInfoElement(shows);
     showsList.appendChild(showsInfoEl);
 

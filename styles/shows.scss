@@ -113,14 +113,96 @@
     &__container {
        @include mobile-offset;
        color: $black;
+       margin: 0;
     }
 
     &__heading {
         display: none;
-        
-        &-wrap {
+
+        &-one{
             color: white;
+        }
+
+        &-two {
+
+        }
+
+        &-three {
+
         }
     }
 }
 
+.info {
+    border-bottom: 0.2rem solid $mercury-1;
+
+    &__time {
+        @include mobile-header2-sub-header;
+        margin: 0;
+        color: $silver;
+        padding-bottom: 1rem;
+    }
+
+    &__date {
+        @include mobile-header4-paragraph;
+        font-family: Avenir-Bold;
+        margin: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    &__task {
+        @include mobile-header2-sub-header;
+        margin: 0;
+        color: $silver;
+        padding-bottom: 1rem;      
+    }
+
+    &__venue {
+        @include mobile-header4-paragraph;
+        font-family: Avenir-Bold;
+        margin: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    &__where {
+        @include mobile-header2-sub-header;
+        margin: 0;
+        color: $silver;
+        padding-bottom: 1rem;
+    }
+
+    &__location {
+        @include mobile-header4-paragraph;
+        font-family: Avenir-Bold;
+        margin: 0;
+        padding-bottom: 1.5rem;
+
+        &-last{
+            padding-bottom: 2rem;
+        }
+    }
+
+
+}
+
+.main {
+
+    &__heading {
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.button__buy {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    color: $white;
+    background-color: $light-black;
+
+    &:hover {
+        background-color: $black;
+    }
+}
