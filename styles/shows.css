@@ -240,16 +240,71 @@
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .shows__container {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 2rem;
+  }
+}
+
 .shows__heading {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .shows__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 79%;
+  }
+}
+
 .shows__heading-one {
-  color: white;
+  font-family: Avenir-Demi;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  width: 21.5%;
+  color: #e1e1e1;
+}
+
+.shows__heading-two {
+  font-family: Avenir-Demi;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #e1e1e1;
+}
+
+.shows__heading-three {
+  font-family: Avenir-Demi;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  width: 28%;
+  color: #e1e1e1;
 }
 
 .info {
   border-bottom: 0.2rem solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-top: 1rem;
+  }
 }
 
 .info__time {
@@ -261,6 +316,12 @@
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .info__time {
+    display: none;
+  }
+}
+
 .info__date {
   font-family: Avenir-Regular;
   font-size: 0.813rem;
@@ -268,6 +329,12 @@
   font-family: Avenir-Bold;
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info__date {
+    width: 25%;
+  }
 }
 
 .info__task {
@@ -279,13 +346,24 @@
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .info__task {
+    display: none;
+  }
+}
+
 .info__venue {
   font-family: Avenir-Regular;
   font-size: 0.813rem;
   line-height: 1.125rem;
-  font-family: Avenir-Bold;
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info__venue {
+    width: 14%;
+  }
 }
 
 .info__where {
@@ -297,11 +375,16 @@
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .info__where {
+    display: none;
+  }
+}
+
 .info__location {
   font-family: Avenir-Regular;
   font-size: 0.813rem;
   line-height: 1.125rem;
-  font-family: Avenir-Bold;
   margin: 0;
   padding-bottom: 1.5rem;
 }
@@ -311,9 +394,20 @@
 }
 
 .main__heading {
+  font-family: Avenir-Bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin: 0;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main__heading {
+    font-family: Avenir-Bold;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
 }
 
 .button__buy {
@@ -323,6 +417,12 @@
   border-radius: 4px;
   color: #ffffff;
   background-color: #444444;
+}
+
+@media screen and (min-width: 768px) {
+  .button__buy {
+    width: 23.057%;
+  }
 }
 
 .button__buy:hover {

@@ -114,21 +114,40 @@
        @include mobile-offset;
        color: $black;
        margin: 0;
+
+       @include tablet {
+           @include tablet-offset;
+           padding-bottom: 2rem;
+       }
     }
 
     &__heading {
         display: none;
 
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            width: 79%;
+        }
+
         &-one{
-            color: white;
+            @include desk-and-tablet-header2-sub-header;
+            font-size: 1rem;
+            width: 21.5%;
+            color: $mercury-1;
         }
 
         &-two {
-
+            @include desk-and-tablet-header2-sub-header;
+            font-size: 1rem;
+            color: $mercury-1;
         }
 
         &-three {
-
+            @include desk-and-tablet-header2-sub-header;
+            font-size: 1rem;
+            width: 28%;
+            color: $mercury-1;
         }
     }
 }
@@ -136,11 +155,22 @@
 .info {
     border-bottom: 0.2rem solid $mercury-1;
 
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 1rem;
+    }
+
     &__time {
         @include mobile-header2-sub-header;
         margin: 0;
         color: $silver;
         padding-bottom: 1rem;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__date {
@@ -148,20 +178,31 @@
         font-family: Avenir-Bold;
         margin: 0;
         padding-bottom: 1.5rem;
+
+        @include tablet {
+            width: 25%;
+        }
     }
 
     &__task {
         @include mobile-header2-sub-header;
         margin: 0;
         color: $silver;
-        padding-bottom: 1rem;      
+        padding-bottom: 1rem;
+
+        @include tablet {
+            display: none;
+        }      
     }
 
     &__venue {
         @include mobile-header4-paragraph;
-        font-family: Avenir-Bold;
         margin: 0;
         padding-bottom: 1.5rem;
+
+        @include tablet {
+            width: 14%;
+        }
     }
 
     &__where {
@@ -169,11 +210,14 @@
         margin: 0;
         color: $silver;
         padding-bottom: 1rem;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__location {
         @include mobile-header4-paragraph;
-        font-family: Avenir-Bold;
         margin: 0;
         padding-bottom: 1.5rem;
 
@@ -188,9 +232,14 @@
 .main {
 
     &__heading {
+        @include mobile-header1;
         margin: 0;
         padding-top: 2rem;
         padding-bottom: 2.5rem;
+
+        @include tablet {
+            @include desk-and-tablet-header1;
+        }
     }
 }
 
@@ -201,6 +250,10 @@
     border-radius: 4px;
     color: $white;
     background-color: $light-black;
+
+    @include tablet {
+        width: 23.057%;
+    }
 
     &:hover {
         background-color: $black;
