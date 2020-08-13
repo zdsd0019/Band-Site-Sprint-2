@@ -3,10 +3,10 @@ let showsList = document.querySelector('.shows__container');
 let mainHeading = [ 'Shows' ];
 
 // Following creates "Shows" heading
-const createMainHeading = (Mheading) => {
+const createMainHeading = (mainHeading) => {
 	const MainHeadingEl = document.createElement('h2');
 
-	MainHeadingEl.innerText = Mheading;
+	MainHeadingEl.innerText = mainHeading;
 	MainHeadingEl.classList.add('main__heading');
 
 	return MainHeadingEl;
@@ -28,27 +28,28 @@ let showsHeading = [
 ];
 
 
-const createShowsElement = (showsData) => {
+const createShowsElement = (showsHeading) => {
+    
 	const showsHeadingEl = document.createElement('section');
 	const showsHeadingWhen = document.createElement('h5');
 	const showsHeadingTask = document.createElement('h5');
 	const showsHeadingWhere = document.createElement('h5');
-
+    
     showsHeadingEl.classList.add('shows__heading');
 
-	showsHeadingWhen.innerText = showsData.when;
+	showsHeadingWhen.innerText = showsHeading.when;
 	showsHeadingWhen.classList.add('shows__heading-one');
 	showsHeadingEl.appendChild(showsHeadingWhen);
 
-	showsHeadingTask.innerText = showsData.task;
+	showsHeadingTask.innerText = showsHeading.task;
 	showsHeadingTask.classList.add('shows__heading-two');
 	showsHeadingEl.appendChild(showsHeadingTask);
 
-	showsHeadingWhere.innerText = showsData.where;
+	showsHeadingWhere.innerText = showsHeading.where;
 	showsHeadingWhere.classList.add('shows__heading-three');
 	showsHeadingEl.appendChild(showsHeadingWhere);
 
-	return showsHeadingEl;
+    return showsHeadingEl;
 };
 
 showsHeading.forEach((shows) => {
@@ -115,7 +116,7 @@ let showsInfo = [
       
   ];
 
-const createShowsInfoElement = (infoShow) => {
+const createShowsInfoElement = (showsInfo) => {
     const showsInfoEl = document.createElement('section');
     const showsInfoWhen = document.createElement('h3');
     const showsInfoDate = document.createElement('h3');
@@ -125,29 +126,29 @@ const createShowsInfoElement = (infoShow) => {
     const showsInfoLocation = document.createElement('h4');
     const buyTickets = document.createElement('button');
     
-    showsInfoWhen.innerText = infoShow.when;
+    showsInfoWhen.innerText = showsInfo.when;
     showsInfoWhen.classList.add('shows__heading-style');
     showsInfoEl.appendChild(showsInfoWhen);
 
-    showsInfoDate.innerText = infoShow.date;
+    showsInfoDate.innerText = showsInfo.date;
     showsInfoDate.classList.add('info__date');
     showsInfoEl.appendChild(showsInfoDate);
 
 
-    showsInfoTask.innerText = infoShow.task;
+    showsInfoTask.innerText = showsInfo.task;
     showsInfoTask.classList.add('info__task');
     showsInfoEl.appendChild(showsInfoTask);
 
-    showsInfoVenue.innerText = infoShow.venue;
+    showsInfoVenue.innerText = showsInfo.venue;
     showsInfoVenue.classList.add('info__venue');
     showsInfoEl.appendChild(showsInfoVenue);
 
 
-    showsInfoWhere.innerText = infoShow.where;
+    showsInfoWhere.innerText = showsInfo.where;
     showsInfoWhere.classList.add('info__where');
     showsInfoEl.appendChild(showsInfoWhere);
 
-    showsInfoLocation.innerText = infoShow.location;
+    showsInfoLocation.innerText = showsInfo.location;
     showsInfoLocation.classList.add('info__location');
     showsInfoEl.appendChild(showsInfoLocation);
 
