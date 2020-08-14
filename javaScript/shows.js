@@ -1,20 +1,32 @@
 let showsList = document.querySelector('.shows__container');
 
+// Following creates "Shows" heading
+
 let mainHeading = [ 'Shows' ];
 
-// Following creates "Shows" heading
+
+const MainHeadingContainer = document.createElement('section');
+MainHeadingContainer.classList.add('heading__wrap');
+showsList.appendChild(MainHeadingContainer);
+
+
 const createMainHeading = mainHeading => {
+
 	const MainHeadingEl = document.createElement('h2');
 
 	MainHeadingEl.innerText = mainHeading;
-	MainHeadingEl.classList.add('main__heading');
+    MainHeadingEl.classList.add('main__heading');
+    // let containers = document.querySelector('.heading__wrap');
+    // containers.appendChild(MainHeadingEl);
+    
 
 	return MainHeadingEl;
 };
 
-mainHeading.forEach(shows => {
-	const MainHeadingEl = createMainHeading(shows);
-	showsList.appendChild(MainHeadingEl);
+mainHeading.forEach(mainHeading => {
+    const MainHeadingContainerEl = createMainHeading(mainHeading);
+    let containers = document.querySelector('.heading__wrap');
+	containers.appendChild(MainHeadingContainerEl);
 });
 
 // Following creates table heading (Date, Venue, Location)
@@ -30,12 +42,14 @@ let showsHeading = [
 
 const createShowsElement = showsHeading => {
     
-	const showsHeadingEl = document.createElement('section');
+	const showsHeadingEl = document.createElement('div');
 	const showsHeadingWhen = document.createElement('h5');
 	const showsHeadingTask = document.createElement('h5');
 	const showsHeadingWhere = document.createElement('h5');
     
     showsHeadingEl.classList.add('shows__heading');
+    // let containers = document.querySelector('.heading__wrap');
+    // containers.appendChild(showsHeadingEl);
 
 	showsHeadingWhen.innerText = showsHeading.when;
 	showsHeadingWhen.classList.add('shows__heading-one');
@@ -52,9 +66,10 @@ const createShowsElement = showsHeading => {
     return showsHeadingEl;
 };
 
-showsHeading.forEach(shows => {
-	const showsHeadingEl = createShowsElement(shows);
-	showsList.appendChild(showsHeadingEl);
+showsHeading.forEach(showsHeading => {
+    const showsHeadingEl = createShowsElement(showsHeading);
+    let containers = document.querySelector('.heading__wrap');
+	containers.appendChild(showsHeadingEl);
 });
 
 // Following creates info of Date, Venue and Location
@@ -162,8 +177,8 @@ const createShowsInfoElement = showsInfo => {
     return showsInfoEl;
 };
 
-    showsInfo.forEach(shows => {
-    const showsInfoEl = createShowsInfoElement(shows);
+    showsInfo.forEach(showsInfo => {
+    const showsInfoEl = createShowsInfoElement(showsInfo);
     showsList.appendChild(showsInfoEl);
 
     });

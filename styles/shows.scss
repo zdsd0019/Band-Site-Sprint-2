@@ -111,14 +111,19 @@
 .shows{
     color: white;
     &__container {
-       @include mobile-offset;
-       color: $black;
-       margin: 0;
-       padding-bottom: 2rem;
+        @include mobile-offset;
+            color: $black;
+            margin: 0;
+            padding-bottom: 2rem;
 
-       @include tablet {
+        @include tablet {
            @include tablet-offset;
            padding-bottom: 2rem;
+       }
+
+        @include laptop {
+            padding-left: 5.625rem;
+            padding-right: 5.625rem;
        }
     }
 
@@ -128,14 +133,23 @@
         @include tablet{
             display: flex;
             justify-content: space-between;
-            width: 79%;
+            width: 78%;
+        }
+
+        @include laptop-l {
+            width: 63.8%;
+            align-items: flex-end;
         }
 
         &-one{
             @include desk-and-tablet-header2-sub-header;
             font-size: 1rem;
-            width: 21.5%;
+            width: 22.5%;
             color: $mercury-1;
+
+            @include laptop-l {
+                width: 18%;
+            }
         }
 
         &-two {
@@ -153,6 +167,10 @@
             @include laptop {
                 width: 25.7%;
             }
+
+            @include laptop-l {
+                width: 42.3%
+            }
         }
     }
 }
@@ -165,6 +183,11 @@
         justify-content: space-between;
         width: 100%;
         padding-top: 1rem;
+    }
+
+    @include laptop-l {
+        width: 63.81%;
+        margin-left: 36.23%;
     }
 
     &__time {
@@ -263,5 +286,12 @@
 
     &:hover {
         background-color: $black;
+    }
+}
+
+.heading__wrap {
+    @include laptop-l {
+        display: flex;
+        justify-content: space-between;
     }
 }
