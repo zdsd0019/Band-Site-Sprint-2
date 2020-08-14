@@ -125,6 +125,10 @@
             padding-left: 5.625rem;
             padding-right: 5.625rem;
        }
+
+       @include laptop-l {
+           @include laptop-offset;
+       }
     }
 
     &__heading {
@@ -148,7 +152,7 @@
             color: $mercury-1;
 
             @include laptop-l {
-                width: 18%;
+                width: 19.3%;
             }
         }
 
@@ -169,7 +173,7 @@
             }
 
             @include laptop-l {
-                width: 42.3%
+                width: 43.6%;
             }
         }
     }

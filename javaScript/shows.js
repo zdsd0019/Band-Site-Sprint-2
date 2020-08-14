@@ -16,9 +16,6 @@ const createMainHeading = mainHeading => {
 
 	MainHeadingEl.innerText = mainHeading;
     MainHeadingEl.classList.add('main__heading');
-    // let containers = document.querySelector('.heading__wrap');
-    // containers.appendChild(MainHeadingEl);
-    
 
 	return MainHeadingEl;
 };
@@ -48,8 +45,6 @@ const createShowsElement = showsHeading => {
 	const showsHeadingWhere = document.createElement('h5');
     
     showsHeadingEl.classList.add('shows__heading');
-    // let containers = document.querySelector('.heading__wrap');
-    // containers.appendChild(showsHeadingEl);
 
 	showsHeadingWhen.innerText = showsHeading.when;
 	showsHeadingWhen.classList.add('shows__heading-one');

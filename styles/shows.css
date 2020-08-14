@@ -256,6 +256,13 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .shows__container {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
 .shows__heading {
   display: none;
 }
@@ -292,7 +299,7 @@
 
 @media screen and (min-width: 1440px) {
   .shows__heading-one {
-    width: 18%;
+    width: 19.3%;
   }
 }
 
@@ -321,7 +328,7 @@
 
 @media screen and (min-width: 1440px) {
   .shows__heading-three {
-    width: 42.3%;
+    width: 43.6%;
   }
 }
 
