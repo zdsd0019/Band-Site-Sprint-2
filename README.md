@@ -1,44 +1,60 @@
-# BandSite - Sprint I
+# BandSite - Sprint II
 
 # Project Overview
 
-This week, you will start a project for an up-and-coming band. The project will be broken into 3 parts (sprints of 1 week each). You will be required to build a website, and all required functionality over the next 3 weeks. Each week has a required deliverable. Creative mock ups and design specs will be provided, and your task is to use the mock ups and requirements to create a fully functional live site for the band.
+For this sprint, you have been provided some updated mock ups for an additional screen that will be part of the site, as well as some new features to be added. Another team is developing some back-end functionality for the new features that you will need to use for the following sprint, so for now you will implement these features in the browser using Javascript until the back-end is ready.
 
-For this sprint, you will be focused on building a responsive, web-site based on the provided mock ups and design specs.
-
+Your goal will be to make the site interactive using JavaScript, and to add a second page to the site according to the mockups and design specs.
 # Tools & Resources
-
-* Make use of a design package (assets, style guide, spec sheet, and creative mockup) to create a functional and responsive site.
-  * Download the complete design package here.
-* You will need to find some royalty free music-related assets. Unsplash is a popular resource for royalty-free images.
-* VSCode’s Live SASS Compiler will transform SASS to CSS on the fly. You will need to install the extension into VSCode and click “Watch SASS…” at the bottom of your screen for live SASS compiling.
+  * Download the Sprint 2 Design Package which includes the required assets, style guide, spec sheets and mockup. Note: Fonts files contain spaces which can cause bugs when attempting to load the fonts from the file system. Files should be renamed without spaces to avoid errors.
+  * As before, use VSCode’s Live SASS Compiler to transform SASS to CSS on the fly. You will need to install the extension into VSCode and click “Watch SASS…” at the bottom of your screen for live SASS compiling.
 
 # Functional Requirements
 
-* Return Home Link: Located in the top-left corner of the nav is the word / logo "BANDSITE". Clicking on this should return visitors to the home page.
+# Comments Section
+* There must be a button that allows a user to add a new comment.
+* The user must be able to add their name and a comment.
+* The comments must be added such that the newest comments are at the top.
+* 3 Default comments must be displayed when the page first loads.
+
+# Shows Page
+
+* There must be a song that can be played. The song can be any song you choose.
 
 # Visual Design Requirements
-* The site must closely resemble the mockups and design specs provided in the design package.
+
+* The site must be responsive and therefore should closely resemble the mockups in the design package.
 * The site must be responsive at all dimensions, including between the provided break-points.
-* You must use royalty-free images for the Album Hero Image and the Band Members Image sourced online.
-* You must use the assets provided for your photo gallery.
+* The CSS classes must use BEM principles.
+* The site must use Flexbox for layout.
 
 # Implementation Requirements
-* Your project must follow the proper folder structure and naming conventions outlined in the project guidelines
-* You must use SASS for your styling, and take advantage of SASS variables, plus any other SASS features that can help improve your code.
-* Class naming for your styling must use BEM
-* Layout of the site must use Flexbox
-* Follow component based design and identify common blocks of code which you can reuse your styles for.
+
+* Your project must follow the proper folder structure and naming convention outlined in the project guidelines
+* The project's CSS must use be derived from SASS and use any SASS features that make the code more concise and reusable, such as variables or mixins.
+
+# Bio Page - Comments Section
+* You must have an array in JavaScript with 3 default comment objects to start. Comments must have a name, a timestamp, and the comment.
+* You must have a function called displayComment() that takes in one comment object as a parameter and displays it on the page using JavaScript DOM manipulation.
+* You must use an HTML Form with the following functionality:
+* That submits using the addEventListener
+  * Prevents the page from reloading when submitting a new comment
+  * Constructs a new comment object
+  * Pushes a new comment object to an array of comments
+  * Clears all comments from the page
+  * Re-renders to the page all comments from the comment array
+  * Clears the input fields after submitting a new comment
+
+# Shows Page
+* You must embed a song of your choice from SoundCloud using an iframe
+* You must create the table using JavaScript DOM manipulation / flexbox layout.
 
 # Diving Deeper
 
-Diving Deeper challenges should only be attempted if all project requirements are met and adding Diving Deeper challenges must not conflict with the existing requirements. The following are suggestions that you can try to take your understanding deeper and go above and beyond.
+Diving Deeper challenges should only be attempted if all project requirements are met and adding Diving Deeper challenges must not conflict with the existing requirements.
 
-##  Applying Pseudo-classes
-<b>Hover Effects:</b> Often, nav bars or card components incorporate some sort of hover functionality to help users identify where they are on the page, and also to add some polish to the overall feel of the site.
+The following are suggestions that you can try to take your understanding deeper and go above and beyond.
 
-* Try adding a hover effect in the style of your choosing to the navigation of this web site. See here for a brief overview of pseudo-classes mentioned previously in Synapse.
-* Photo Gallery Hover: Use pseudo-classes to have the images of the gallery grayscale by default, and when the user hovers over each image it returns to color. This feature must make use of a CSS filter.
-
-##  Applying Page Functionality
-<b>Mailto Link:</b> Located in the footer of the web page is the contact information for several agents. Clicking on the email addresses listed should open up a user's mail account where they can begin to draft a message to the specific contact.
+# Dynamic Timestamp
+* To add a more realistic feel to the site, try updating the timestamp in the comments section to reflect when it was posted in a more human-readable format. Using YouTube as an example, a recently posted comment might display the time posted as "10 minutes ago" or "3 days ago". Apply this type of timestamp to your data without hardcoding the actual message.
+ 
