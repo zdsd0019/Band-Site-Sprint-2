@@ -70,6 +70,32 @@
             <img class="picture__gallery picture__right" src="./assets/images/photo-gallery-9.jpg" alt="Link is broken">
         </div>
     </section>
+    
+    <!-- Conversation Form -->
+    <section class="conversation">
+        <h1 class="conversation__title">Join the Conversation</h1>
+        <div class="conversation__container">
+          <div class="conversation__post conversation__post--create">
+            <div class="conversation__image--box conversation__image-box--create">
+              <img name="commentImage" class="conversation__image conversation__image--create" src='/assets/images/mohan-muruge.jpg'>
+            </div>
+            <form class="conversation__name--create" id="commentForm">
+              <div class="conversation__text--box conversation__text--box-create">
+                <label class="conversation__text--box--name-and-comment" for="fname">NAME</label>
+                <input class="conversation__name--input" type="text" name="commentName" id="fname" placeholder="Enter Your Name">
+                <div class="conversation__comment conversation__comment--create">
+                  <label class="conversation__text--box--name-and-comment" for="fcomment">COMMENT</label>
+                  <textarea class="conversation__comment--input" name="commentText" id="fcomment" cols="5" rows="5" placeholder="Add a new comment"></textarea>
+                  <button class="conversation__button" name="commentButton">
+                    COMMENT
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="conversation__post--container"></div>
+        </div>
+      </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -148,5 +174,6 @@
     </footer>
 
 </body>
-
+<script src="/javascript/date-format.js"></script>
+<script src="./javaScript/biography.js"></script>
 </html>

@@ -37,7 +37,7 @@ let showsHeading = [
 ];
 
 
-const createShowsElement = showsHeading => {
+const createShowsHeading = showsHeading => {
     
 	const showsHeadingEl = document.createElement('div');
 	const showsHeadingWhen = document.createElement('h5');
@@ -62,7 +62,7 @@ const createShowsElement = showsHeading => {
 };
 
 showsHeading.forEach(showsHeading => {
-    const showsHeadingEl = createShowsElement(showsHeading);
+    const showsHeadingEl = createShowsHeading(showsHeading);
     let containers = document.querySelector('.heading__wrap');
 	containers.appendChild(showsHeadingEl);
 });
