@@ -49,12 +49,4 @@ Your goal will be to make the site interactive using JavaScript, and to add a se
 * You must embed a song of your choice from SoundCloud using an iframe
 * You must create the table using JavaScript DOM manipulation / flexbox layout.
 
-# Diving Deeper
-
-Diving Deeper challenges should only be attempted if all project requirements are met and adding Diving Deeper challenges must not conflict with the existing requirements.
-
-The following are suggestions that you can try to take your understanding deeper and go above and beyond.
-
-# Dynamic Timestamp
-* To add a more realistic feel to the site, try updating the timestamp in the comments section to reflect when it was posted in a more human-readable format. Using YouTube as an example, a recently posted comment might display the time posted as "10 minutes ago" or "3 days ago". Apply this type of timestamp to your data without hardcoding the actual message.
  
